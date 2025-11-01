@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #f1f5fa, #99adc5 );
+}
+.navbar {
+  background-color: #79a0d0;
+  height: 100px;
+  color: #ffffff;
+  font-size: larger;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-logo {
+  width: 120px;
+  height: 100px;
+}
+
+.nav-title {
+  /* font-size: 20px; */
+  margin-left: 20px;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+.nav-title:hover {
+    color: #062954;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #062954;
+}
+/* ===== CONTACT PAGE ===== */
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: #031e2b;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: #06336b;
+  margin-bottom: 10px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 80px;
+}
+
+.contact-form, .contact-info {
+  background-color: #f1f5fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 25px;
+  width: 90%;
+  margin-left: 38px;
+  text-align: left;
+}
+
+.contact-form h3, .contact-info h3 {
+  color: #06336b;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  resize: none;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  background-color: #004080;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #06336b;
+}
+
+.form-msg {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #06336b;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}

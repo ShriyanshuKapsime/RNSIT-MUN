@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #f1f5fa, #99adc5 );
+}
+.navbar {
+  background-color: #79a0d0;
+  height: 100px;
+  color: #ffffff;
+  font-size: larger;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-logo {
+  width: 120px;
+  height: 100px;
+}
+
+.nav-title {
+  /* font-size: 20px; */
+  margin-left: 20px;
+  flex-grow: 1;
+  transition: 0.3s;
+}
+.nav-title:hover {
+    color: #062954;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #062954;
+}
+
+/* ===== RESOURCES PAGE ===== */
+.resources-section {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1200px;
+  color: #06336b;
+}
+
+.resources-section h2 {
+  font-size: 32px;
+  color: #062954;
+  margin-bottom: 10px;
+}
+
+.resources-section p {
+  color: #2a4f8a;
+  margin-bottom: 40px;
+}
+
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pdf-card {
+  background: #f1f5fa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  width: 350px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pdf-card:hover {
+  transform: scale(1.03);
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #004080;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #06336b;
+}

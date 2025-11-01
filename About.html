@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | RNSIT MUN</title>
+<link rel="stylesheet" href="About.css" >
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="mun logo1.png" class="nav-logo" alt="MUN Logo">
+            <h1 class="nav-title">RNSIT-MUN SOCIETY</h1>
+            <ul class="nav-links">
+            <li><a href="MUN.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+ </nav>
+
+  <div class="section">
+    <h1>Introduction</h1>
+    <p>
+      I’m <b>Shriyanshu Kumar Kapsime</b>, a first-semester Computer Science and Engineering student at RNS Institute of Technology, Bangalore.
+      I’m originally from Chatra, Jharkhand but My passion for technology and problem-solving inspired me to move to Bangalore, the heart of India's tech ecosystem, to begin my journey as a software engineer.
+      I’m currently learning web development as the first step toward building a strong foundation in software engineering.
+      I am enjoying this new journet till now and hope it remains same. Through college projects, online courses, and hackathons, I aim to strengthen my skills and grow into a developer capable of solving real-world problems.
+
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>My Interests</h2>
+    <p>
+      I have a keen interest in <b>Web Development</b> and really excited to learn more new technologies. I enjoy exploring new ideas that come to me from observing everyday problems around me. Web development and coding give me the tools to turn those ideas into simple, practical solutions.
+      Apart from coding my hobbies include consuming indian politics, playing chess, listening to desi hiphop etc.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Why I Want to Join the MUN Technical Team</h2>
+    <p>
+        I would love to contribute to the club with my skills but on a personal level,
+       Being in Technical Team of a official and active club like RNSIT-MUN will give me wonderful exposure to real life challenges involved in coding.
+       It will also allow me to polish my skills in a real world scenario and not just private projects as our codes gets tested really only when real users use it.
+       Being in Technical Team of MUN club will also allow me to interact and learn from seniors which will definetly helps me in future.
+
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🌐 Connect With Me</h2>
+    <p>Let’s collaborate, build, and grow together.</p>
+    <div class="socials">
+      <a href="https://github.com/ShriyanshuKapsime" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/shriyanshu-kumar-kapsime-95685736b/" target="_blank">LinkedIn</a>
+      <a href="shriyanshu.0022@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 RNSIT MUN | Designed by Shriyanshu Kumar Kapsime
+  </footer>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    } else {
+      entry.target.classList.remove("visible");
+    }
+  });
+}, { threshold: 0.4 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>

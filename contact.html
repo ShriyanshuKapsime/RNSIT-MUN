@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | RNSIT MUN</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+ <nav class="navbar">
+        <div class="nav-container">
+            <img src="mun logo1.png" class="nav-logo" alt="MUN Logo">
+            <h1 class="nav-title">RNSIT-MUN SOCIETY</h1>
+            <ul class="nav-links">
+            <li><a href="MUN.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+ </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to connect with RNSIT-MUN Society? We'd love to hear from you!</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form id="contactForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <p id="formMessage" class="form-msg"></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Connect With Us</h3>
+        <p><strong>Email:</strong> <a href="mailto:mun@rnsit.ac.in">rnsitmun@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rnsit.mun/" target="_blank">@rnsit.mun</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/rnsit-mun-club/posts/?feedView=all" target="_blank">RNSIT MUN Society</a></p>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/rnsit.mun/" target="_blank"><img src="instalogo.webp" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/company/rnsit-mun-club/posts/?feedView=all" target="_blank"><img src="linkedinlogo.webp" alt="LinkedIn"></a>
+          <a href="mailto:mun@rnsit.ac.in"><img src="gmaillogo.webp" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   
+    const form = document.getElementById("contactForm");
+    const msg = document.getElementById("formMessage");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      msg.textContent = "✅ Your message has been sent!";
+      msg.style.color = "green";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
